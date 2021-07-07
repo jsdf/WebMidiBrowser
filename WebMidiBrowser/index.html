@@ -1,0 +1,25 @@
+<pre id="midi"/>
+
+<script type="text/javascript">
+	
+navigator.requestMIDIAccess().then(access => { 
+
+	function printPort(port) {
+		return `${port.id}: ${port.manufacturer} ${port.name}`
+	}
+
+	function render() {
+		console.log('onstatechange', Array.from(access.inputs).map(([id,port]) => port.name),  Array.from(access.outputs).map(([id,port])=>port.name))
+		document.querySelector('#midi').innerText = 'inputs: '
+		+Array.from(access.inputs).map(([id, input]) => printPort(input)).join(', ')
+		+'\noutputs: '
+		+ Array.from(access.outputs).map(([id, output]) => printPort(output)).join(', ')
+	}
+
+	render();
+
+	access.onstatechange = render
+})
+
+</script>
+

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,14 @@
 		7346488B260ACC86009490B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73464889260ACC86009490B6 /* Main.storyboard */; };
 		7346488D260ACC87009490B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7346488C260ACC87009490B6 /* Assets.xcassets */; };
 		73464890260ACC87009490B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7346488E260ACC87009490B6 /* LaunchScreen.storyboard */; };
+		86BF364C26237DE000031086 /* shim.js in Resources */ = {isa = PBXBuildFile; fileRef = 86BF364B26237DE000031086 /* shim.js */; };
+		86BF36522623882600031086 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 86BF36512623882600031086 /* index.html */; };
+		EA220ED95F7EA53B1BE50A17 /* Pods_WebMidiBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AC83CF74B3F5EE1D811EB5 /* Pods_WebMidiBrowser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D58538A7CCA10A849630B23 /* Pods-WebMidiBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMidiBrowser.debug.xcconfig"; path = "Target Support Files/Pods-WebMidiBrowser/Pods-WebMidiBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		37AC83CF74B3F5EE1D811EB5 /* Pods_WebMidiBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebMidiBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73464880260ACC86009490B6 /* WebMidiBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebMidiBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73464883260ACC86009490B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73464885260ACC86009490B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		7346488C260ACC87009490B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7346488F260ACC87009490B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73464891260ACC87009490B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86BF364B26237DE000031086 /* shim.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = shim.js; sourceTree = "<group>"; };
+		86BF36512623882600031086 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		AF6D8019536E6247501CB07C /* Pods-WebMidiBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebMidiBrowser.release.xcconfig"; path = "Target Support Files/Pods-WebMidiBrowser/Pods-WebMidiBrowser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA220ED95F7EA53B1BE50A17 /* Pods_WebMidiBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				73464882260ACC86009490B6 /* WebMidiBrowser */,
 				73464881260ACC86009490B6 /* Products */,
+				EB9008CD7254CC50AAA1A5C7 /* Pods */,
+				E384858C48D9247088A26888 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +67,10 @@
 		73464882260ACC86009490B6 /* WebMidiBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				86BF364B26237DE000031086 /* shim.js */,
 				73464883260ACC86009490B6 /* AppDelegate.swift */,
 				73464885260ACC86009490B6 /* SceneDelegate.swift */,
+				86BF36512623882600031086 /* index.html */,
 				73464887260ACC86009490B6 /* ViewController.swift */,
 				73464889260ACC86009490B6 /* Main.storyboard */,
 				7346488C260ACC87009490B6 /* Assets.xcassets */,
@@ -67,6 +80,23 @@
 			path = WebMidiBrowser;
 			sourceTree = "<group>";
 		};
+		E384858C48D9247088A26888 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37AC83CF74B3F5EE1D811EB5 /* Pods_WebMidiBrowser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB9008CD7254CC50AAA1A5C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D58538A7CCA10A849630B23 /* Pods-WebMidiBrowser.debug.xcconfig */,
+				AF6D8019536E6247501CB07C /* Pods-WebMidiBrowser.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73464894260ACC87009490B6 /* Build configuration list for PBXNativeTarget "WebMidiBrowser" */;
 			buildPhases = (
+				316B62028540CA13E4455651 /* [CP] Check Pods Manifest.lock */,
 				7346487C260ACC86009490B6 /* Sources */,
 				7346487D260ACC86009490B6 /* Frameworks */,
 				7346487E260ACC86009490B6 /* Resources */,
+				74832516D8AC6201E3A700B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +159,55 @@
 			files = (
 				73464890260ACC87009490B6 /* LaunchScreen.storyboard in Resources */,
 				7346488D260ACC87009490B6 /* Assets.xcassets in Resources */,
+				86BF36522623882600031086 /* index.html in Resources */,
 				7346488B260ACC86009490B6 /* Main.storyboard in Resources */,
+				86BF364C26237DE000031086 /* shim.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		316B62028540CA13E4455651 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebMidiBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74832516D8AC6201E3A700B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebMidiBrowser/Pods-WebMidiBrowser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebMidiBrowser/Pods-WebMidiBrowser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebMidiBrowser/Pods-WebMidiBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7346487C260ACC86009490B6 /* Sources */ = {
@@ -282,9 +358,11 @@
 		};
 		73464895260ACC87009490B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D58538A7CCA10A849630B23 /* Pods-WebMidiBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W54YB5T38;
 				INFOPLIST_FILE = WebMidiBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +377,11 @@
 		};
 		73464896260ACC87009490B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF6D8019536E6247501CB07C /* Pods-WebMidiBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W54YB5T38;
 				INFOPLIST_FILE = WebMidiBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

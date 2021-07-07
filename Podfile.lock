@@ -1,0 +1,23 @@
+PODS:
+  - Gong (1.2.1):
+    - Gong/Constants (= 1.2.1)
+    - Gong/Core (= 1.2.1)
+    - Gong/Events (= 1.2.1)
+  - Gong/Constants (1.2.1)
+  - Gong/Core (1.2.1)
+  - Gong/Events (1.2.1):
+    - Gong/Core
+
+DEPENDENCIES:
+  - Gong (~> 1.2)
+
+SPEC REPOS:
+  trunk:
+    - Gong
+
+SPEC CHECKSUMS:
+  Gong: 049a090e5b5d5da9ef431d145743cc73afbfb168
+
+PODFILE CHECKSUM: 658674b5e84218d768309417c60195b69303b324
+
+COCOAPODS: 1.10.1
